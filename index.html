@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>System Dashboard</title>
+<link rel="stylesheet" href="style.css">  
+<script src="script.js"></script>   
+
+
+</head>
+
+<body>
+
+<div class="header">
+System Debug Console
+</div>
+
+<div class="container">
+    
+<div id="success" class="box hidden">
+<h2 class="success">✔ Issue Resolved</h2>
+<p>FLAG: DEBUG_COMPLETE_9021</p>
+</div>
+
+<p>
+A production issue has been reported.<br>
+Follow proper debugging steps to resolve it.
+</p>
+
+
+<div class="box">
+
+<div class="box">
+
+<button onclick="step('fix')">Apply Fix</button>
+<button onclick="step('inspect')">Inspect Requests</button>
+<button onclick="step('verify')">Verify Result</button>
+<button onclick="step('reproduce')">Reproduce Issue</button>
+<button onclick="step('breakpoint')">Set Breakpoint</button>
+<button onclick="step('config')">Validate Configuration</button>
+<button onclick="step('logs')">Check Logs</button>
+
+</div>
+
+</div>
+
+<div class="box">
+<h3>System Logs</h3>
+<div id="log" class="log">
+> Tip: Always start by reproducing the issue.
+</div>
+</div>
+</div>
+
+</body>
+</html>
