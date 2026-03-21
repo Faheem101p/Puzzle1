@@ -24,8 +24,6 @@ log("RESET: " + reason);
 log("Hint: Start from reproducing the issue");
 }
 
-/* main step handler */
-
 function step(action){
 
 document.getElementById("success").classList.add("hidden");
@@ -70,8 +68,6 @@ log("System stable");
 break;
 
 }
-
-/* success */
 
 if(currentStep === sequence.length){
 document.getElementById("success").classList.remove("hidden");
