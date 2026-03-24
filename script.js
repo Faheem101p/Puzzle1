@@ -74,7 +74,14 @@ if(currentStep === sequence.length){
 document.getElementById("success").classList.remove("hidden");
 
 }
-
+if(currentStep === sequence.length){
+    const successEl = document.getElementById("success");
+    successEl.classList.remove("hidden");
+    successEl.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+    });
+}
 
 
 }
