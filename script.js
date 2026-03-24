@@ -71,6 +71,10 @@ break;
 
 if(currentStep === sequence.length){
 document.getElementById("success").classList.remove("hidden");
+window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
 }
 
 }
