@@ -69,12 +69,15 @@ break;
 
 }
 
-if(currentStep === sequence.length){
-document.getElementById("success").classList.remove("hidden");
-window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-  });
-}
+if (currentStep === sequence.length) {
+    const successElement = document.getElementById("success");
+    successElement.classList.remove("hidden");
 
+    // Give the browser one frame to render the 'hidden' removal
+    requestAnimationFrame(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
 }
