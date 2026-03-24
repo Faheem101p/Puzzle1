@@ -69,15 +69,12 @@ break;
 
 }
 
-if (currentStep === sequence.length) {
-    const successElement = document.getElementById("success");
-    successElement.classList.remove("hidden");
+if(currentStep === sequence.length){
 
-    // Give the browser one frame to render the 'hidden' removal
-    requestAnimationFrame(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
+document.getElementById("success").classList.remove("hidden");
+
+}
+
+
+
 }
