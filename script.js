@@ -24,6 +24,7 @@ log("RESET: " + reason);
 log("Hint: Start from reproducing the issue");
 }
 
+
 function step(action){
 
 document.getElementById("success").classList.add("hidden");
@@ -69,19 +70,19 @@ break;
 
 }
 
+
 if(currentStep === sequence.length){
-
 document.getElementById("success").classList.remove("hidden");
-
 }
 if(currentStep === sequence.length){
+
     const successEl = document.getElementById("success");
     successEl.classList.remove("hidden");
+
     successEl.scrollIntoView({
         behavior: "smooth",
         block: "start"
     });
 }
-
-
 }
+
